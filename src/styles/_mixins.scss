@@ -1,0 +1,68 @@
+@mixin flex-justify-position($position) {
+  display: flex;
+  justify-content: $position;
+}
+
+@mixin d-flex {
+  display: flex;
+}
+
+@mixin status-display($color) {
+  background-color: $color;
+  padding: 12px;
+  width: 2px;
+  border-radius: 28px;
+}
+
+@mixin hamburger {
+  height: 2px;
+  margin: 0;
+  width: 25px;
+  background-color: $secondary-color1;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin flex-item-position($position) {
+  display: flex;
+  align-items: $position;
+}
+
+@mixin flex-arrange($axis) {
+  display: flex;
+  flex-direction: $axis;
+}
+
+@mixin text-align-pos($direction) {
+  text-align: $direction;
+}
+
+@mixin horizon-spacing($value) {
+  margin: 0 $value;
+}
+
+@mixin vert-spacing($value) {
+  margin: $value 0;
+}
+
+@mixin normal-font-size($size) {
+  font-size: $size;
+}
+
+@mixin large-font-size {
+  font-size: 20px;
+}
+
+@mixin input-spacing($value) {
+  @include vert-spacing($value);
+}
+
+@mixin left-shadow($color) {
+  box-shadow: -2px 0 1px $color;
+}
+
+@mixin workSans-family {
+  font-family: "Work Sans";
+}
