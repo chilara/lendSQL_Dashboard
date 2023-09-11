@@ -135,24 +135,24 @@ export const Login = () => {
   return (
     <div className="login">
       <div className="flex md:flex-space-around flex-justify-center flex-col md:flex-row">
-        <div className="flex flex-col w-full md:w-7/10">
+        <div className="flex flex-col w-full md:w-7/10 ">
           <img
             src={logo}
-            className="w-1/4 ml-50px mt-40px mb-90px"
+            className="w-1/4 ml-50px mt-40px mb-90px "
             alt="logo"
           />
           <img src={loginPhoto} alt="logo" />
         </div>
         <form
           onSubmit={(event) => event.preventDefault()}
-          className="flex flex-justify-center flex-col md:w-1/2 md:mx-1 left-shadow"
+          className="flex flex-justify-center flex-col md:w-full md:mx-1 left-shadow  h-full"
         >
-          <div className="text-left mx-1 md:w-full">
+          <div className="text-left mx-1 md:w-2\/25">
             <p className="ml-10p bold pri-text-color-1 text-lg">Welcome!</p>
-            <p className="ml-10p sec-text-color-1">Enter details to login</p>
+            <p className="ml-10p sec-text-color-1 ">Enter details to login</p>
             <>
               <div
-                className={`w-full p-10px mt-20px b-solid bw-1 ${
+                className={`w-full p-15px mt-40px b-solid bw-1 ${
                   formFieldError.email ? "b-red-color" : "grey-border-color"
                 } rounded-sm flex flex-row flex-space-between flex-align-center`}
               >
@@ -171,7 +171,7 @@ export const Login = () => {
             </>
             <>
               <div
-                className={`w-full p-10px mt-20px b-solid bw-1 ${
+                className={`w-full p-15px mt-20px b-solid bw-1 ${
                   formFieldError.password ? "b-red-color" : "grey-border-color"
                 } rounded-sm flex flex-row flex-space-between flex-align-center`}
               >
@@ -200,7 +200,7 @@ export const Login = () => {
             </p>
             <button
               onClick={handleSubmit(formField)}
-              className="w-full pointer mb-90px md:mb-0 primary2-border-color mt-30px b-none rounded-sm pri-bg-color-2 p-10px text-white bold"
+              className="w-full pointer mb-90px md:mb-0 primary2-border-color mt-30px b-none rounded-sm pri-bg-color-2 p-15px text-white bold"
             >
               {loading ? "Please Wait..." : "LOG IN"}
             </button>
